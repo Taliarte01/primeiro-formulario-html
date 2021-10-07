@@ -22,7 +22,22 @@
 
         <div>
           <label for="sobrenome"><strong>Sobrenome</strong></label>
-          <input type="sobrenome" id="sobrenome" required />
+          <input type="text" name="sobrenome" id="sobrenome" required />
+        </div>
+
+        <div>
+          <label for="data-nascimento"><strong>Data Nascimento</strong></label>
+          <input
+            type="date"
+            name="data-nascimento"
+            id="data-nascimento"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="senha"><strong>Senha</strong></label>
+          <input type="password" name="senha" id="senha" required />
         </div>
       </fieldset>
 
@@ -32,7 +47,7 @@
       </div>
 
       <div>
-        <label for=""
+        <label
           ><strong
             >Como você se vê quanto ao conhecimento de programação?</strong
           ></label
@@ -78,7 +93,53 @@
         </select>
       </div>
 
-      <button type="submit">Concluído</button>
+      <fieldset>
+        <div>
+          <label><strong>Selecione as tecnologias que utiliza:</strong></label
+          ><br /><br />
+          <input
+            type="checkbox"
+            id="tecnologia1"
+            nome="tecnologia1"
+            value="Celular"
+          />
+          <label for="tecnologia1">Celular</label>
+          <input
+            type="checkbox"
+            id="tecnologia2"
+            nome="tecnologia2"
+            value="Computador"
+          />
+          <label for="tecnologia2">Computador</label>
+          <input
+            type="checkbox"
+            id="tecnologia3"
+            nome="tecnologia3"
+            value="Notbook"
+          />
+          <label for="tecnologia3">Notebook</label>
+        </div>
+      </fieldset>
+
+      <div>
+        <br />
+        <label for="">Conte um pouco dos seus sonhos:</label>
+        <textarea
+          row="6"
+          style="width: 26em"
+          id="sonhos"
+          nome="sonhos"
+        ></textarea>
+      </div>
+
+      <div>
+        <br />
+        <label for="">Nível de satisfação profissional atual:</label>
+        <input type="range" min="0" max="10" />
+      </div>
+
+      <input type="submit" value="Concluído" />
+      <input type="reset" value="Cancelar" />
     </form>
   </body>
 </html>
